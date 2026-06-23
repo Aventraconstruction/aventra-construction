@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8YQQYE54JJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8YQQYE54JJ');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Aventra Construction — Coimbatore</title>
+  <meta name="description" content="Learn about Aventra Construction — our vision, mission, core values, and specializations in construction and project management across Coimbatore, Tamil Nadu." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    .mission-points { display: flex; flex-direction: column; gap: 16px; }
+    .mission-point { display: flex; gap: 16px; align-items: flex-start; padding: 18px 20px; background: var(--navy-card); border-radius: 10px; border-left: 3px solid var(--gold); }
+    .mission-point-num { font-family: var(--font-head); font-size: 1.5rem; font-weight: 800; color: var(--gold); line-height: 1; flex-shrink: 0; width: 28px; }
+    .mission-point-text { color: var(--text-muted); font-size: 0.92rem; }
+    .vision-box { background: linear-gradient(135deg, var(--navy-mid), var(--navy-card)); border: 1px solid var(--gold-border); border-radius: 20px; padding: 40px; }
+    .specialization-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .specialization-item { background: var(--navy-card); border: 1px solid var(--gold-border); border-radius: 12px; padding: 24px 20px; display: flex; align-items: center; gap: 14px; transition: var(--transition); }
+    .specialization-item:hover { border-color: var(--gold); background: var(--navy-mid); }
+    .specialization-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .specialization-text { color: var(--white); font-size: 0.9rem; font-weight: 500; }
+    @media(max-width:900px) { .mission-grid { grid-template-columns: 1fr; } .specialization-grid { grid-template-columns: 1fr 1fr; } }
+    @media(max-width:600px) { .specialization-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">A</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">Aventra Construction</span>
+        <span class="nav-logo-tag">Coimbatore, Tamil Nadu</span>
+      </div>
+    </a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-dropdown"><a href="about.html" class="nav-link active">Company ▾</a>
+        <div class="nav-dropdown-menu">
+          <a href="about.html" class="nav-dropdown-item">About Us</a>
+          <a href="founder.html" class="nav-dropdown-item">Founder & MD</a>
+          <a href="why-choose.html" class="nav-dropdown-item">Why Choose Us</a>
+          <a href="process.html" class="nav-dropdown-item">Construction Process</a>
+          <a href="policies.html" class="nav-dropdown-item">Policies</a>
+        </div>
+      </li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li class="nav-dropdown"><a href="insights.html" class="nav-link">Resources ▾</a>
+        <div class="nav-dropdown-menu">
+          <a href="insights.html" class="nav-dropdown-item">Insights & Blog</a>
+          <a href="downloads.html" class="nav-dropdown-item">Download Center</a>
+          <a href="testimonials.html" class="nav-dropdown-item">Our Promise</a>
+          <a href="careers.html" class="nav-dropdown-item">Careers</a>
+        </div>
+      </li>
+      <li><a href="contact.html" class="nav-link btn btn-primary btn-sm nav-cta">Get a Quote</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="mobileNav">
+  <a href="index.html" class="nav-mobile-link">Home</a>
+  <a href="about.html" class="nav-mobile-link">About Us</a>
+  <a href="founder.html" class="nav-mobile-sub">↳ Founder & MD</a>
+  <a href="why-choose.html" class="nav-mobile-sub">↳ Why Choose Us</a>
+  <a href="process.html" class="nav-mobile-sub">↳ Construction Process</a>
+  <a href="policies.html" class="nav-mobile-sub">↳ Policies</a>
+  <a href="services.html" class="nav-mobile-link">Services</a>
+  <a href="projects.html" class="nav-mobile-link">Projects</a>
+  <a href="insights.html" class="nav-mobile-link">Insights & Blog</a>
+  <a href="downloads.html" class="nav-mobile-sub">↳ Download Center</a>
+  <a href="testimonials.html" class="nav-mobile-link">Our Promise</a>
+  <a href="careers.html" class="nav-mobile-link">Careers</a>
+  <a href="contact.html" class="nav-mobile-link" style="color:var(--gold)">Get a Free Quote →</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="page-hero-breadcrumb"><a href="index.html">Home</a><span>›</span><span>About Us</span></div>
+    <span class="section-label">Who We Are</span>
+    <h1 class="page-hero-title">About <span style="color:var(--gold)">Aventra Construction</span></h1>
+    <p class="page-hero-subtitle">A professional construction company built on the principles of quality, transparency, and unwavering customer commitment.</p>
+  </div>
+</section>
+
+<!-- COMPANY PROFILE -->
+<section class="section">
+  <div class="container">
+    <div class="about-split">
+      <div class="about-img-wrap reveal-left">
+        <img src="assets/images/about.png" alt="Aventra Construction project site" loading="lazy" />
+        <div class="about-img-badge">
+          <div class="about-img-badge-num">★</div>
+          <div class="about-img-badge-label">Engineering Excellence</div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-label">Company Profile</span>
+        <h2 class="section-title">Building Excellence, <span>One Project at a Time</span></h2>
+        <div class="gold-line"></div>
+        <p>Aventra Construction is a professional construction company based in Coimbatore, Tamil Nadu, delivering residential and commercial construction, turnkey projects, interior works, and comprehensive project management solutions.</p>
+        <p class="mt-2">Founded with a clear vision of transforming how construction is done in India, we rely on engineering-led execution and professional management practices to deliver projects that exceed client expectations.</p>
+        <p class="mt-2">Our commitment to quality, transparent costing, rigorous safety standards, and absolute customer satisfaction sets us apart from conventional construction firms.</p>
+        <div class="highlight-box mt-3">"We don't just build structures — we build trust, relationships, and legacies that last generations."</div>
+        <div class="btn-group mt-4">
+          <a href="founder.html" class="btn btn-primary">Meet Our Founder</a>
+          <a href="contact.html" class="btn btn-outline">Start a Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION & MISSION -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="section-label">Our Direction</span>
+      <h2 class="section-title">Vision & <span>Mission</span></h2>
+      <div class="gold-line center"></div>
+    </div>
+    <div class="mission-grid">
+      <div class="reveal-left">
+        <div class="vision-box">
+          <div style="font-size:2.5rem;margin-bottom:20px">🎯</div>
+          <h3 style="color:var(--gold);margin-bottom:16px;font-family:var(--font-head)">Our Vision</h3>
+          <p style="font-size:1.05rem;color:var(--white);font-style:italic;margin-bottom:16px">"To become one of India's most trusted construction companies by delivering high-quality, innovative, and sustainable construction solutions."</p>
+          <p>We envision Aventra Construction as the benchmark of construction excellence in Coimbatore and across Tamil Nadu — known for professional integrity and quality that speaks for itself.</p>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <h3 style="color:var(--white);margin-bottom:24px;font-family:var(--font-head)">Our <span style="color:var(--gold)">Mission</span></h3>
+        <div class="mission-points">
+          <div class="mission-point"><div class="mission-point-num">01</div><div class="mission-point-text">Deliver quality construction projects that stand the test of time.</div></div>
+          <div class="mission-point"><div class="mission-point-num">02</div><div class="mission-point-text">Ensure complete transparency throughout the entire project lifecycle.</div></div>
+          <div class="mission-point"><div class="mission-point-num">03</div><div class="mission-point-text">Provide cost-effective, innovative construction solutions without compromise.</div></div>
+          <div class="mission-point"><div class="mission-point-num">04</div><div class="mission-point-text">Maintain the highest standards of health, safety and environmental responsibility.</div></div>
+          <div class="mission-point"><div class="mission-point-num">05</div><div class="mission-point-text">Build long-term, trust-based relationships with every client we serve.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="section">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="section-label">What Drives Us</span>
+      <h2 class="section-title">Our Core <span>Values</span></h2>
+      <div class="gold-line center"></div>
+      <p class="section-subtitle">These seven values are the foundation of every decision, action, and relationship at Aventra Construction.</p>
+    </div>
+    <div class="grid-4 reveal">
+      <div class="card text-center">
+        <div class="card-icon" style="margin:0 auto 20px">🏆</div>
+        <h4 class="card-title">Quality</h4>
+        <p class="card-text">Uncompromising standards in materials, workmanship and delivery.</p>
+      </div>
+      <div class="card text-center">
+        <div class="card-icon" style="margin:0 auto 20px">🔍</div>
+        <h4 class="card-title">Transparency</h4>
+        <p class="card-text">Open, honest communication and detailed cost accountability.</p>
+      </div>
+      <div class="card text-center">
+        <div class="card-icon" style="margin:0 auto 20px">⚖️</div>
+        <h4 class="card-title">Integrity</h4>
+        <p class="card-text">Ethical conduct and professional honesty in every interaction.</p>
+      </div>
+      <div class="card text-center">
+        <div class="card-icon" style="margin:0 auto 20px">💡</div>
+        <h4 class="card-title">Innovation</h4>
+        <p class="card-text">Modern construction techniques and engineering solutions.</p>
+      </div>
+      <div class="card text-center">
+        <div class="card-icon" style="margin:0 auto 20px">🛡️</div>
+        <h4 class="card-title">Safety</h4>
+        <p class="card-text">Zero-compromise approach to site safety and worker welfare.</p>
+      </div>
+      <div class="card text-center">
+        <div class="card-icon" style="margin:0 auto 20px">❤️</div>
+        <h4 class="card-title">Customer Satisfaction</h4>
+        <p class="card-text">Client happiness is our ultimate measure of success.</p>
+      </div>
+      <div class="card text-center">
+        <div class="card-icon" style="margin:0 auto 20px">🎖️</div>
+        <h4 class="card-title">Professional Excellence</h4>
+        <p class="card-text">Continuous improvement and industry best practices.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALIZATIONS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="section-label">Our Expertise</span>
+      <h2 class="section-title">Our <span>Specializations</span></h2>
+      <div class="gold-line center"></div>
+      <p class="section-subtitle">A comprehensive range of construction and project management services tailored to every client need.</p>
+    </div>
+    <div class="specialization-grid reveal">
+      <div class="specialization-item"><span class="specialization-icon">🏠</span><span class="specialization-text">Residential Construction</span></div>
+      <div class="specialization-item"><span class="specialization-icon">🏢</span><span class="specialization-text">Commercial Construction</span></div>
+      <div class="specialization-item"><span class="specialization-icon">🔑</span><span class="specialization-text">Turnkey Construction</span></div>
+      <div class="specialization-item"><span class="specialization-icon">🛋️</span><span class="specialization-text">Interior Design & Fit-Out</span></div>
+      <div class="specialization-item"><span class="specialization-icon">🔨</span><span class="specialization-text">Renovation & Remodeling</span></div>
+      <div class="specialization-item"><span class="specialization-icon">📊</span><span class="specialization-text">Project Management</span></div>
+      <div class="specialization-item"><span class="specialization-icon">📋</span><span class="specialization-text">Construction Consultancy</span></div>
+      <div class="specialization-item"><span class="specialization-icon">🌿</span><span class="specialization-text">Landscaping Works</span></div>
+      <div class="specialization-item"><span class="specialization-icon">💰</span><span class="specialization-text">Procurement & Cost Management</span></div>
+    </div>
+    <div class="text-center mt-4 reveal">
+      <a href="services.html" class="btn btn-primary">Explore All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div class="cta-banner-content">
+        <h2 class="section-title">Ready to Work <span>With Us?</span></h2>
+        <p>Let's discuss your project and show you how Aventra Construction can deliver beyond your expectations.</p>
+        <div class="btn-group" style="justify-content:center">
+          <a href="contact.html" class="btn btn-primary btn-lg">Get Free Consultation</a>
+          <a href="projects.html" class="btn btn-outline btn-lg">View Our Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="nav-logo"><img src="assets/images/LOGO.png" alt="Aventra Construction" style="height:44px;width:auto;display:block;" /></a>
+        <p class="footer-brand-text">Premium construction and project management company delivering quality, transparency, and customer satisfaction.</p>
+        <div class="footer-social" style="margin-top:20px"><a href="https://www.youtube.com/channel/UCCmz3D1ii_e5ZY4__OIbHeA" class="footer-social-link" aria-label="YouTube" title="YouTube" target="_blank" rel="noopener" style="color:#FF0000"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a><a href="https://www.instagram.com/aventra_construction/" class="footer-social-link" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener" style="color:#E1306C"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="https://www.linkedin.com/company/aventra-construction/" class="footer-social-link" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener" style="color:#0A66C2"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="https://wa.me/919843271710" class="footer-social-link" aria-label="WhatsApp" title="WhatsApp" target="_blank" rel="noopener" style="color:#25D366"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div>
+      </div>
+      <div><div class="footer-heading">Company</div><ul class="footer-links"><li><a href="about.html" class="footer-link">About Us</a></li><li><a href="founder.html" class="footer-link">Founder & MD</a></li><li><a href="why-choose.html" class="footer-link">Why Choose Us</a></li><li><a href="process.html" class="footer-link">Our Process</a></li><li><a href="policies.html" class="footer-link">Policies</a></li></ul></div>
+      <div><div class="footer-heading">Services</div><ul class="footer-links"><li><a href="services.html" class="footer-link">Residential</a></li><li><a href="services.html" class="footer-link">Commercial</a></li><li><a href="services.html" class="footer-link">Turnkey</a></li><li><a href="services.html" class="footer-link">Interior Design</a></li><li><a href="services.html" class="footer-link">Project Management</a></li></ul></div>
+      <div><div class="footer-heading">Contact</div><div class="footer-contact-item"><span>📍</span><span>MIG 1091, Near Bannari Amman Kovil, Ganapathy Maanagar, Coimbatore, Tamil Nadu, India</span></div><div class="footer-contact-item"><span>📞</span><a href="tel:+919843271710" style="color:var(--text-muted)">+91 98432 71710</a></div><div class="footer-contact-item"><span>✉️</span><a href="mailto:aventraconstruction1@gmail.com" style="color:var(--text-muted)">aventraconstruction1@gmail.com</a></div></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2024 Aventra Construction. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919999999999?text=Hello%20Aventra%20Construction" class="whatsapp-fab" aria-label="WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="whatsapp-fab-label">Chat with us!</span>
+</a>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

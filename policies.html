@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8YQQYE54JJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8YQQYE54JJ');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company Policies | Aventra Construction — Coimbatore</title>
+  <meta name="description" content="Aventra Construction's policies on health & safety, quality, environment, human resources, and ethics & compliance." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    .policy-intro-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      margin-bottom: 60px;
+    }
+    .policy-nav-card {
+      background: var(--navy-card);
+      border: 1px solid var(--gold-border);
+      border-radius: 14px;
+      padding: 24px 16px;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+    .policy-nav-card:hover, .policy-nav-card.active {
+      border-color: var(--gold);
+      background: var(--gold-dim);
+    }
+    .policy-nav-icon { font-size: 2rem; margin-bottom: 10px; }
+    .policy-nav-title { color: var(--white); font-size: 0.82rem; font-weight: 600; }
+    .policy-section {
+      background: var(--navy-card);
+      border: 1px solid var(--gold-border);
+      border-radius: 20px;
+      margin-bottom: 24px;
+      overflow: hidden;
+    }
+    .policy-header {
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      cursor: pointer;
+      transition: var(--transition);
+      border-bottom: 1px solid transparent;
+    }
+    .policy-header:hover { background: var(--gold-dim); }
+    .policy-section.open .policy-header { border-bottom-color: var(--gold-border); background: var(--gold-dim); }
+    .policy-header-icon {
+      width: 56px; height: 56px;
+      background: var(--gold-dim);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; flex-shrink: 0;
+      transition: var(--transition);
+    }
+    .policy-section.open .policy-header-icon { background: var(--gold); }
+    .policy-header-text { flex: 1; }
+    .policy-header-title { color: var(--white); font-size: 1.15rem; font-weight: 600; font-family: var(--font-head); margin-bottom: 4px; }
+    .policy-header-sub { color: var(--text-muted); font-size: 0.85rem; }
+    .policy-chevron {
+      width: 32px; height: 32px;
+      border: 1px solid var(--gold-border);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold); font-size: 0.85rem;
+      transition: transform 0.35s ease;
+      flex-shrink: 0;
+    }
+    .policy-section.open .policy-chevron { transform: rotate(180deg); }
+    .policy-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1);
+    }
+    .policy-body-inner { padding: 36px 40px; }
+    .policy-statement {
+      font-size: 1.05rem;
+      color: var(--white);
+      font-style: italic;
+      border-left: 4px solid var(--gold);
+      padding: 16px 24px;
+      background: rgba(201,168,76,0.05);
+      border-radius: 0 10px 10px 0;
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+    .policy-body-inner p { color: var(--text-muted); margin-bottom: 16px; font-size: 0.95rem; }
+    .policy-points { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+    .policy-point {
+      display: flex; align-items: flex-start; gap: 12px;
+      background: var(--navy-mid); border-radius: 10px;
+      padding: 14px 16px;
+      border: 1px solid rgba(201,168,76,0.1);
+      transition: var(--transition);
+    }
+    .policy-point:hover { border-color: var(--gold-border); }
+    .policy-point-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+    .policy-point-text { color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; }
+    .policy-commitment {
+      margin-top: 24px;
+      background: var(--gold-dim);
+      border: 1px solid var(--gold-border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      display: flex; align-items: center; gap: 14px;
+    }
+    .policy-commitment-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .policy-commitment-text { color: var(--text-muted); font-size: 0.9rem; }
+    .policy-commitment-text strong { color: var(--gold); }
+    @media(max-width:900px) {
+      .policy-intro-grid { grid-template-columns: repeat(3,1fr); }
+      .policy-points { grid-template-columns: 1fr; }
+      .policy-header { padding: 24px; }
+      .policy-body-inner { padding: 24px; }
+    }
+    @media(max-width:600px) {
+      .policy-intro-grid { grid-template-columns: repeat(2,1fr); }
+      .policy-header-icon { width: 44px; height: 44px; font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="assets/images/LOGO.png" alt="Aventra Construction" style="height:44px;width:auto;display:block;" /></a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="about.html" class="nav-link active">Company ▾</a>
+        <div class="nav-dropdown-menu">
+          <a href="about.html" class="nav-dropdown-item">About Us</a>
+          <a href="founder.html" class="nav-dropdown-item">Founder & MD</a>
+          <a href="why-choose.html" class="nav-dropdown-item">Why Choose Us</a>
+          <a href="process.html" class="nav-dropdown-item">Construction Process</a>
+          <a href="policies.html" class="nav-dropdown-item">Policies</a>
+        </div>
+      </li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="projects.html" class="nav-link">Projects</a></li>
+      <li class="nav-dropdown">
+        <a href="insights.html" class="nav-link">Resources ▾</a>
+        <div class="nav-dropdown-menu">
+          <a href="insights.html" class="nav-dropdown-item">Insights & Blog</a>
+          <a href="downloads.html" class="nav-dropdown-item">Download Center</a>
+          <a href="testimonials.html" class="nav-dropdown-item">Our Promise</a>
+          <a href="careers.html" class="nav-dropdown-item">Careers</a>
+        </div>
+      </li>
+      <li><a href="contact.html" class="nav-link btn btn-primary btn-sm nav-cta">Get a Quote</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="mobileNav">
+  <a href="index.html" class="nav-mobile-link">Home</a><a href="about.html" class="nav-mobile-link">About Us</a><a href="founder.html" class="nav-mobile-sub">↳ Founder & MD</a><a href="why-choose.html" class="nav-mobile-sub">↳ Why Choose Us</a><a href="process.html" class="nav-mobile-sub">↳ Construction Process</a><a href="policies.html" class="nav-mobile-sub">↳ Policies</a><a href="services.html" class="nav-mobile-link">Services</a><a href="projects.html" class="nav-mobile-link">Projects</a><a href="insights.html" class="nav-mobile-link">Insights & Blog</a><a href="downloads.html" class="nav-mobile-sub">↳ Download Center</a><a href="testimonials.html" class="nav-mobile-link">Our Promise</a><a href="careers.html" class="nav-mobile-link">Careers</a><a href="contact.html" class="nav-mobile-link" style="color:var(--gold)">Get a Free Quote →</a>
+</div>
+
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <div class="page-hero-breadcrumb"><a href="index.html">Home</a><span>›</span><a href="about.html">About</a><span>›</span><span>Policies</span></div>
+    <span class="section-label">Our Commitments</span>
+    <h1 class="page-hero-title">Company <span style="color:var(--gold)">Policies</span></h1>
+    <p class="page-hero-subtitle">Our policies define how we operate — with integrity, responsibility and professional excellence at every level.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Quick Nav -->
+    <div class="policy-intro-grid reveal">
+      <a href="#hs-policy" class="policy-nav-card">
+        <div class="policy-nav-icon">🦺</div>
+        <div class="policy-nav-title">Health & Safety</div>
+      </a>
+      <a href="#q-policy" class="policy-nav-card">
+        <div class="policy-nav-icon">🏆</div>
+        <div class="policy-nav-title">Quality</div>
+      </a>
+      <a href="#env-policy" class="policy-nav-card">
+        <div class="policy-nav-icon">🌿</div>
+        <div class="policy-nav-title">Environment</div>
+      </a>
+      <a href="#hr-policy" class="policy-nav-card">
+        <div class="policy-nav-icon">👥</div>
+        <div class="policy-nav-title">Human Resources</div>
+      </a>
+      <a href="#ethics-policy" class="policy-nav-card">
+        <div class="policy-nav-icon">⚖️</div>
+        <div class="policy-nav-title">Ethics & Compliance</div>
+      </a>
+    </div>
+
+    <!-- HEALTH & SAFETY POLICY -->
+    <div class="policy-section reveal" id="hs-policy">
+      <div class="policy-header accordion-header">
+        <div class="policy-header-icon">🦺</div>
+        <div class="policy-header-text">
+          <div class="policy-header-title">Health & Safety Policy</div>
+          <div class="policy-header-sub">Zero-compromise approach to site safety and worker welfare</div>
+        </div>
+        <div class="policy-chevron">▼</div>
+      </div>
+      <div class="policy-body accordion-body">
+        <div class="policy-body-inner">
+          <div class="policy-statement">"Aventra Construction is committed to providing and maintaining a safe and healthy working environment for all employees, subcontractors, visitors and clients across every project site."</div>
+          <p>The health and safety of every person on our construction sites is our highest operational priority. We believe that all accidents and work-related illnesses are preventable, and we hold ourselves accountable to that standard.</p>
+          <div class="policy-points">
+            <div class="policy-point"><span class="policy-point-icon">✅</span><span class="policy-point-text">Mandatory PPE usage for all site personnel at all times</span></div>
+            <div class="policy-point"><span class="policy-point-icon">✅</span><span class="policy-point-text">Regular safety induction and toolbox talks for all workers</span></div>
+            <div class="policy-point"><span class="policy-point-icon">✅</span><span class="policy-point-text">Compliance with all applicable safety regulations and standards</span></div>
+            <div class="policy-point"><span class="policy-point-icon">✅</span><span class="policy-point-text">Incident reporting, investigation and corrective action systems</span></div>
+            <div class="policy-point"><span class="policy-point-icon">✅</span><span class="policy-point-text">First aid facilities and emergency procedures on every site</span></div>
+            <div class="policy-point"><span class="policy-point-icon">✅</span><span class="policy-point-text">Regular site safety inspections and hazard identification</span></div>
+          </div>
+          <div class="policy-commitment"><span class="policy-commitment-icon">🛡️</span><p class="policy-commitment-text"><strong>Our commitment:</strong> Every worker returns home safely every day. Safety is non-negotiable at Aventra Construction.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUALITY POLICY -->
+    <div class="policy-section reveal" id="q-policy">
+      <div class="policy-header accordion-header">
+        <div class="policy-header-icon">🏆</div>
+        <div class="policy-header-text">
+          <div class="policy-header-title">Quality Policy</div>
+          <div class="policy-header-sub">Delivering projects that meet and exceed client expectations</div>
+        </div>
+        <div class="policy-chevron">▼</div>
+      </div>
+      <div class="policy-body accordion-body">
+        <div class="policy-body-inner">
+          <div class="policy-statement">"Aventra Construction is committed to delivering construction projects that consistently meet client requirements, applicable standards, and our own high internal quality benchmarks."</div>
+          <p>Quality is embedded in our culture — from material selection to workmanship, from design coordination to final handover. We do not compromise on quality for the sake of speed or cost.</p>
+          <div class="policy-points">
+            <div class="policy-point"><span class="policy-point-icon">🔍</span><span class="policy-point-text">Strict material quality checks before use on site</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🔍</span><span class="policy-point-text">Stage-wise quality inspections at every construction milestone</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🔍</span><span class="policy-point-text">Adherence to IS codes, NBC, and industry best practices</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🔍</span><span class="policy-point-text">Client sign-off required at every critical project stage</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🔍</span><span class="policy-point-text">Structured snag clearance process before handover</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🔍</span><span class="policy-point-text">Continuous improvement through project lessons learned</span></div>
+          </div>
+          <div class="policy-commitment"><span class="policy-commitment-icon">🏆</span><p class="policy-commitment-text"><strong>Our commitment:</strong> Every Aventra project is built to last — quality that stands as a lasting testament to our craftsmanship.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENVIRONMENTAL POLICY -->
+    <div class="policy-section reveal" id="env-policy">
+      <div class="policy-header accordion-header">
+        <div class="policy-header-icon">🌿</div>
+        <div class="policy-header-text">
+          <div class="policy-header-title">Environmental Policy</div>
+          <div class="policy-header-sub">Sustainable construction and environmental responsibility</div>
+        </div>
+        <div class="policy-chevron">▼</div>
+      </div>
+      <div class="policy-body accordion-body">
+        <div class="policy-body-inner">
+          <div class="policy-statement">"Aventra Construction is committed to minimising the environmental impact of our construction activities and to promoting sustainable building practices across all our projects."</div>
+          <p>We recognise that construction has a significant environmental impact and take our responsibility seriously — adopting eco-friendly materials, waste reduction practices, and sustainable construction methods wherever possible.</p>
+          <div class="policy-points">
+            <div class="policy-point"><span class="policy-point-icon">🌱</span><span class="policy-point-text">Use of eco-friendly and sustainable building materials</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🌱</span><span class="policy-point-text">Construction waste segregation, reduction and recycling</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🌱</span><span class="policy-point-text">Energy-efficient design integration in project planning</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🌱</span><span class="policy-point-text">Dust and noise pollution control on all active sites</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🌱</span><span class="policy-point-text">Rainwater harvesting systems promoted in residential projects</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🌱</span><span class="policy-point-text">Compliance with all environmental regulations and permits</span></div>
+          </div>
+          <div class="policy-commitment"><span class="policy-commitment-icon">🌍</span><p class="policy-commitment-text"><strong>Our commitment:</strong> Building for today without compromising tomorrow. Sustainable construction is the responsible way to build.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HR POLICY -->
+    <div class="policy-section reveal" id="hr-policy">
+      <div class="policy-header accordion-header">
+        <div class="policy-header-icon">👥</div>
+        <div class="policy-header-text">
+          <div class="policy-header-title">Human Resource Policy</div>
+          <div class="policy-header-sub">Professional growth, equal opportunity and employee welfare</div>
+        </div>
+        <div class="policy-chevron">▼</div>
+      </div>
+      <div class="policy-body accordion-body">
+        <div class="policy-body-inner">
+          <div class="policy-statement">"Aventra Construction is committed to building a professional, diverse, and inclusive team — where every individual is valued, respected, and empowered to grow."</div>
+          <p>Our people are our most valuable asset. We invest in talent, create a positive and ethical workplace, and provide every team member with the opportunity to develop professionally and personally.</p>
+          <div class="policy-points">
+            <div class="policy-point"><span class="policy-point-icon">🤝</span><span class="policy-point-text">Equal opportunity employment — merit-based hiring and promotion</span></div>
+            <div class="policy-point"><span class="policy-point-icon">📚</span><span class="policy-point-text">Continuous training and professional development programmes</span></div>
+            <div class="policy-point"><span class="policy-point-icon">💼</span><span class="policy-point-text">Fair and timely compensation with statutory compliance</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🛡️</span><span class="policy-point-text">Zero tolerance for harassment, discrimination or misconduct</span></div>
+            <div class="policy-point"><span class="policy-point-icon">❤️</span><span class="policy-point-text">Employee welfare, health insurance and safety benefits</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🌟</span><span class="policy-point-text">Recognition and reward for performance and innovation</span></div>
+          </div>
+          <div class="policy-commitment"><span class="policy-commitment-icon">👥</span><p class="policy-commitment-text"><strong>Our commitment:</strong> A team that feels valued builds projects that are exceptional. People-first is our enduring principle.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ETHICS POLICY -->
+    <div class="policy-section reveal" id="ethics-policy">
+      <div class="policy-header accordion-header">
+        <div class="policy-header-icon">⚖️</div>
+        <div class="policy-header-text">
+          <div class="policy-header-title">Ethics & Compliance Policy</div>
+          <div class="policy-header-sub">Integrity, transparency and accountability in all operations</div>
+        </div>
+        <div class="policy-chevron">▼</div>
+      </div>
+      <div class="policy-body accordion-body">
+        <div class="policy-body-inner">
+          <div class="policy-statement">"Aventra Construction conducts all its business activities with the highest standards of honesty, integrity, transparency and legal compliance — without exception."</div>
+          <p>We believe that ethical conduct is not just a legal obligation but the foundation of long-term trust with clients, partners, and the community. Every business decision at Aventra is made with integrity at its core.</p>
+          <div class="policy-points">
+            <div class="policy-point"><span class="policy-point-icon">⚖️</span><span class="policy-point-text">Strict anti-bribery and anti-corruption stance in all dealings</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🔒</span><span class="policy-point-text">Client data confidentiality and privacy protection</span></div>
+            <div class="policy-point"><span class="policy-point-icon">📋</span><span class="policy-point-text">Full compliance with all applicable laws, regulations and codes</span></div>
+            <div class="policy-point"><span class="policy-point-icon">🤝</span><span class="policy-point-text">Fair and transparent dealings with all suppliers and contractors</span></div>
+            <div class="policy-point"><span class="policy-point-icon">📣</span><span class="policy-point-text">Open-door grievance and whistle-blower protection</span></div>
+            <div class="policy-point"><span class="policy-point-icon">📊</span><span class="policy-point-text">Accurate financial reporting and transparent cost accounting</span></div>
+          </div>
+          <div class="policy-commitment"><span class="policy-commitment-icon">⚖️</span><p class="policy-commitment-text"><strong>Our commitment:</strong> Our reputation is built on trust. Every action we take reflects our commitment to doing business the right way.</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-sm section-alt">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div class="cta-banner-content">
+        <h2 class="section-title">Questions About Our <span>Standards?</span></h2>
+        <p>We're happy to discuss how our policies translate into real project outcomes for you.</p>
+        <div class="btn-group" style="justify-content:center">
+          <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+          <a href="about.html" class="btn btn-outline btn-lg">About Aventra</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><a href="index.html" class="nav-logo"><img src="assets/images/LOGO.png" alt="Aventra Construction" style="height:44px;width:auto;display:block;" /></a><p class="footer-brand-text">Premium construction services in Coimbatore, Tamil Nadu.</p><div class="footer-social" style="margin-top:20px"><a href="https://www.youtube.com/channel/UCCmz3D1ii_e5ZY4__OIbHeA" class="footer-social-link" aria-label="YouTube" title="YouTube" target="_blank" rel="noopener" style="color:#FF0000"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a><a href="https://www.instagram.com/aventra_construction/" class="footer-social-link" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener" style="color:#E1306C"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="https://www.linkedin.com/company/aventra-construction/" class="footer-social-link" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener" style="color:#0A66C2"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="https://wa.me/919843271710" class="footer-social-link" aria-label="WhatsApp" title="WhatsApp" target="_blank" rel="noopener" style="color:#25D366"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div></div><div><div class="footer-heading">Company</div><ul class="footer-links"><li><a href="about.html" class="footer-link">About Us</a></li><li><a href="founder.html" class="footer-link">Founder & MD</a></li><li><a href="why-choose.html" class="footer-link">Why Choose Us</a></li><li><a href="process.html" class="footer-link">Our Process</a></li><li><a href="policies.html" class="footer-link">Policies</a></li></ul></div><div><div class="footer-heading">Services</div><ul class="footer-links"><li><a href="services.html" class="footer-link">Residential</a></li><li><a href="services.html" class="footer-link">Commercial</a></li><li><a href="services.html" class="footer-link">Turnkey</a></li><li><a href="services.html" class="footer-link">Interior Design</a></li><li><a href="services.html" class="footer-link">Project Management</a></li></ul></div><div><div class="footer-heading">Contact</div><div class="footer-contact-item"><span>📍</span><span>MIG 1091, Near Bannari Amman Kovil, Ganapathy Maanagar, Coimbatore, Tamil Nadu, India</span></div><div class="footer-contact-item"><span>📞</span><a href="tel:+919843271710" style="color:var(--text-muted)">+91 98432 71710</a></div><div class="footer-contact-item"><span>✉️</span><a href="mailto:aventraconstruction1@gmail.com" style="color:var(--text-muted)">aventraconstruction1@gmail.com</a></div></div></div><div class="footer-bottom"><p class="footer-copy">© 2024 Aventra Construction. All rights reserved.</p></div></div></footer>
+<a href="https://wa.me/919999999999" class="whatsapp-fab" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span class="whatsapp-fab-label">Chat with us!</span></a>
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
