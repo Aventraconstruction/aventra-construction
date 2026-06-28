@@ -138,40 +138,30 @@
     document.getElementById('downloadModal').style.display = 'none';
   }
 
-  function handleDownload(e) {
-    e.preventDefault();
-    document.getElementById('downloadForm').style.display = 'none';
+ function handleDownload(e) {
+  e.preventDefault();
 
-    if (currentFileReal) {
-      // Check if file is accessible before starting download
-      fetch(currentFile, { method: 'HEAD' })
-        .then(function(resp) {
-          if (resp.ok) {
-            document.getElementById('dl-success').style.display = 'block';
-            
-            // Start the real file download after brief delay so user sees success
-            setTimeout(function() {
-              var link = document.createElement('a');
-              link.href = currentFile;
-              link.download = currentFile.split('/').pop();
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-            }, 500);
-          } else {
-            document.getElementById('dl-unavailable').style.display = 'block';
-          }
-        })
-        .catch(function() {
-          // fetch throws if entirely blocked/network error or CORS (but it shouldn't for same-origin).
-          // If it fails, assume not available.
-          document.getElementById('dl-unavailable').style.display = 'block';
-        });
-    } else {
-      // Placeholder files not yet available
-      document.getElementById('dl-unavailable').style.display = 'block';
-    }
-  }
+  document.getElementById('downloadForm').style.display = 'none';
+
+  const name = document.getElementById('dl-name').value;
+  const phone = document.getElementById('dl-mobile').value;
+
+  fetch("https://script.google.com/macros/s/AKfycbyk_Kao5pXD8692M3ME_kX3d7zwIVS4zhPgmeESwICieSl2iAERTPwcJzgRNZmJ2KhPLg/exec", {
+    method: "POST",
+    mode: "no-cors",
+    body: new URLSearchParams({
+      name: name,
+      phone: phone,
+      pdf: currentFile
+    })
+  });
+
+  document.getElementById('dl-success').style.display = 'block';
+
+  setTimeout(function () {
+    window.open(currentFile, "_blank");
+  }, 1000);
+}
 
   window.onclick = function(event) {
     if (event.target == document.getElementById('downloadModal')) {
